@@ -24,7 +24,7 @@ Likewise, it is highly recommended that you pass the `NEW_RELIC_APP_NAME` enviro
 This action currently does not return any outputs.
 
 ## Example usage
-
+```yaml
 on:
   pull_request:
     types: [closed]
@@ -38,3 +38,4 @@ jobs:
         env:
           NEW_RELIC_LICENSE_KEY: ${{ secrets.NEW_RELIC_LICENSE_KEY }}
           NEW_RELIC_APP_NAME: "GitHub Actions Test"
+```
