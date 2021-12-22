@@ -23,7 +23,16 @@ Likewise, it is highly recommended that you pass the `NEW_RELIC_APP_NAME` enviro
 
 This action currently does not return any outputs.
 
+## Gotchas/Caveats
+
+This Action currently only supports `pull_request` events with type `closed`.
+
+This is intentional in order to help people implementing workflows using this Action know if it's working or not.
+
+This will, undoubtedly, evolve and expand if/when this Action continues to evolve.
+
 ## Example usage
+
 ```yaml
 on:
   pull_request:
